@@ -11,13 +11,7 @@ const (
 
 )
 
-package main
 
-import (
-    "log"
-
-    "github.com/andr1ww/odin"
-)
 
 type User struct {
     odin.Bucket `bucket:"users" database:"main"`
