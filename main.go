@@ -24,7 +24,7 @@ func main() {
     if err := odin.ConnectDefault("./odin.db"); err != nil {
         log.Fatal(err)
     }
-    defer odin.CloseAll()
+    // defer odin.CloseAll()
 
     user := &User{
         Bucket: odin.Bucket{ID: "Key"},
